@@ -1,9 +1,11 @@
 import './App.css';
+import Teams from './components/Teams';
+
 
 function App() {
   return (
-    <div>
-      
+    <div className='App'>
+      <Teams />
     </div>
   );
 }
