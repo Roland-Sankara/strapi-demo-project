@@ -22,11 +22,15 @@ const NavMenu = () => {
       </div>
       <nav className="nav">
         <div className="nav-menu">
-          <ul className={isMobile ? "nav-link-mobile" : "nav-link"}>
+          <ul className={isMobile ? "nav-link-mobile" : "nav-link"}
+            onClick={() => setIsMobile(false)}
+          >
             <li className="links">
               <Link className="anchor klubb" to="/klubben">
                 Klubben
-                <FontAwesomeIcon className="arrow" icon="fa-solid fa-sort-down" />
+                <span className="arrow">
+                  <FontAwesomeIcon icon="fa-solid fa-sort-down" />
+                </span>
               </Link>
             </li>
             <li className="links">
@@ -48,7 +52,7 @@ const NavMenu = () => {
               <Link className="anchor" to="/medlemskap">
                 Medlemskap
                 <span className="arrow">
-                <FontAwesomeIcon  icon="fa-solid fa-sort-down" />
+                  <FontAwesomeIcon icon="fa-solid fa-sort-down" />
                 </span>
               </Link>
             </li>
@@ -73,9 +77,9 @@ const NavMenu = () => {
             onClick={() => setIsMobile(!isMobile)}
           >
             {isMobile ? (
-              <i className="fas fa-times"></i>
+              <i className="fas fa-times"  />
             ) : (
-              <i className="fas fa-bars"></i>
+              <i className="fas fa-bars"  />
             )}
           </button>
         </div>

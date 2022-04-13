@@ -5,6 +5,23 @@
   justify-content: space-between;
   align-items: center;
 }
+.nav-menu {
+  width: 100%;
+}
+.nav-link {
+  display: none;
+}
+.nav-link-mobile {
+  display: flex;
+  flex-direction: column;
+}
+.links {
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
 .logo img {
   width: 95%;
 }
@@ -24,26 +41,9 @@
   display: block;
   list-style: none;
   border: none;
-  font-size: 30px;
+  font-size: 25px;
   background-color: white;
   outline: none;
-}
-.nav-menu {
-  width: 100%;
-}
-.nav-link {
-  display: none;
-}
-.nav-link-mobile {
-  display: flex;
-  flex-direction: column;
-}
-.links {
-  color: black;
-  text-decoration: none;
-  margin-top: 10px;
-  letter-spacing: 1px;
-  font-size: 14px;
 }
 .arrow {
   position: relative;
@@ -86,12 +86,15 @@
     text-decoration: none;
     color: white;
   }
+  .arrow {
+    left: 0.8em;
+  }
 }
 @media only screen and (min-width: 1355px) {
   .nav-link {
     display: flex;
     list-style: none;
-    justify-content:flex-start;
+    justify-content: flex-start;
     padding-top: 8px;
   }
   .klubb {
