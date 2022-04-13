@@ -1,11 +1,17 @@
 import "./App.css";
 import NavMenu from "./components/NavMenu";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <NavMenu />
-    </div>
+    <Router>
+        <NavMenu />
+        <div>
+          <Routes>
+            <Route></Route>
+          </Routes>
+        </div>
+    </Router>
   );
 }
 
