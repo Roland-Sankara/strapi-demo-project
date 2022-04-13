@@ -5,13 +5,13 @@ import "./NavMenu.css";
 import { Link } from "react-router-dom";
 
 const NavMenu = () => {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
     <div>
       <div className="logo">
         <div>
-          <img src={logo} alt="" />
+          <img src={logo} alt="Gjøvik handball klubb logo" />
         </div>
         <div className="follow">
           <span>Følg oss på </span>
@@ -22,12 +22,11 @@ const NavMenu = () => {
       </div>
       <nav className="nav">
         <div className="nav-menu">
-          <ul
-            className={isMobile ? "nav-link-mobile" : "nav-link"}
-          >
+          <ul className={isMobile ? "nav-link-mobile" : "nav-link"}>
             <li className="links">
-              <Link className="anchor" to="/klubben">
+              <Link className="anchor klubb" to="/klubben">
                 Klubben
+                <FontAwesomeIcon className="arrow" icon="fa-solid fa-sort-down" />
               </Link>
             </li>
             <li className="links">
@@ -48,6 +47,9 @@ const NavMenu = () => {
             <li className="links">
               <Link className="anchor" to="/medlemskap">
                 Medlemskap
+                <span className="arrow">
+                <FontAwesomeIcon  icon="fa-solid fa-sort-down" />
+                </span>
               </Link>
             </li>
             <li className="links">
@@ -61,7 +63,7 @@ const NavMenu = () => {
               </Link>
             </li>
             <li className="links">
-              <Link className="anchor" to="/marked">
+              <Link className="anchor marked" to="/marked">
                 Marked
               </Link>
             </li>

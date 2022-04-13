@@ -1,76 +1,118 @@
 .logo {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.logo img {
+  width: 95%;
+}
+.follow {
+  margin-right: 20px;
+}
+.follow a {
+  color: #22478c;
+}
 .fa-icon {
   color: #22478c;
 }
-.nav {
-  height: 50px;
-  background-color: #22478c;
+.mobile-icon {
+  position: absolute;
+  right: 5%;
+  top: 55px;
+  display: block;
+  list-style: none;
+  border: none;
+  font-size: 30px;
+  background-color: white;
+  outline: none;
 }
 .nav-menu {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
 }
 .nav-link {
+  display: none;
+}
+.nav-link-mobile {
   display: flex;
-  justify-content: space-between;
-  list-style: none;
+  flex-direction: column;
 }
 .links {
-  margin-top: 15px;
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
   letter-spacing: 1px;
   font-size: 14px;
 }
+.arrow {
+  position: relative;
+  left: 5px;
+  top: -2px;
+}
 .anchor {
-  color: white;
+  padding: 5px 10px;
+  color: black;
   text-decoration: none;
 }
-.mobile-icon {
-  display: none;
-}
-@media only screen and (max-width: 900px) {
-  .nav {
-    background-color: white;
-  }
+@media only screen and (min-width: 970px) {
   .logo {
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
   }
-  .follow {
-    margin-right: 20px;
-  }
-  .mobile-icon {
-    position: absolute;
-    right: 5%;
-    top: 55px;
-    display: block;
-    list-style: none;
-    border: none;
-    font-size: 30px;
-    background-color: white;
-    outline: none;
-  }
-  .nav-menu {
+  .nav {
     width: 100%;
-    background-color: white;
+    height: 50px;
+    background-color: #22478c;
   }
   .nav-link {
-    display: none;
-  }
-  .nav-link-mobile {
     display: flex;
-    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 8px;
   }
-  .links {
-    color: black;
+  .nav-menu {
+    width: 80%;
+    margin: 0 auto;
   }
   .anchor {
-    padding: 5px 10px;
-    color: black;
+    text-decoration: none;
+    color: white;
+  }
+  .mobile-icon {
+    display: none;
+  }
+  .anchor {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media only screen and (min-width: 1355px) {
+  .nav-link {
+    display: flex;
+    list-style: none;
+    justify-content:flex-start;
+    padding-top: 8px;
+  }
+  .klubb {
+    margin-left: -20px;
+  }
+  .mobile-icon {
+    display: none;
+    background-color: none;
+  }
+  .anchor {
+    text-decoration: none;
+    color: white;
+    border-right: 2px solid #376faa;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-right: 2px solid #376faa;
+  }
+  .arrow {
+    left: 1.2em;
+  }
+  .marked {
+    border-right: none;
   }
 }
