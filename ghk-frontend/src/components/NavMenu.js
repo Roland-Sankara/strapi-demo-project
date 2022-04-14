@@ -20,19 +20,34 @@ const NavMenu = () => {
           </a>
         </div>
       </div>
+      <div className="border-bottom"></div>
       <nav className="nav">
         <div className="nav-menu">
-          <ul className={isMobile ? "nav-link-mobile" : "nav-link"}
+          <ul
+            className={isMobile ? "nav-link-mobile" : "nav-link"}
             onClick={() => setIsMobile(false)}
           >
-            <li className="links">
+            <li className="links dropdown">
               <Link className="anchor klubb" to="/klubben">
                 Klubben
                 <span className="arrow">
                   <FontAwesomeIcon icon="fa-solid fa-sort-down" />
                 </span>
               </Link>
+              <ul className="dropdown-link">
+                <li>
+                  <Link className="dropdown-anchor" to="/">
+                    Om klubben
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-anchor" to="/">
+                    Kontakt oss
+                  </Link>
+                </li>
+              </ul>
             </li>
+            <Link to="/lagene"></Link>
             <li className="links">
               <Link className="anchor" to="/lagene">
                 Lagene
@@ -48,13 +63,25 @@ const NavMenu = () => {
                 Kampaktivitet
               </Link>
             </li>
-            <li className="links">
+            <li className="links dropdown">
               <Link className="anchor" to="/medlemskap">
                 Medlemskap
                 <span className="arrow">
                   <FontAwesomeIcon icon="fa-solid fa-sort-down" />
                 </span>
               </Link>
+              <ul className="dropdown-link">
+                <li>
+                  <Link className="dropdown-anchor" to="/">
+                    Om medlemskap
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-anchor" to="/">
+                    Les mer
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li className="links">
               <Link className="anchor" to="/dugnader">
@@ -77,9 +104,9 @@ const NavMenu = () => {
             onClick={() => setIsMobile(!isMobile)}
           >
             {isMobile ? (
-              <i className="fas fa-times"  />
+              <i className="fas fa-times" />
             ) : (
-              <i className="fas fa-bars"  />
+              <i className="fas fa-bars" />
             )}
           </button>
         </div>

@@ -1,3 +1,4 @@
+/* Logo style - mobile first */
 .logo {
   width: 95%;
   margin: 0 auto;
@@ -7,6 +8,10 @@
 }
 .nav-menu {
   width: 100%;
+  margin-top: 20px;
+}
+.border-bottom {
+  border-bottom: 1px solid #dfdfdf;
 }
 .nav-link {
   display: none;
@@ -37,7 +42,7 @@
 .mobile-icon {
   position: absolute;
   right: 5%;
-  top: 55px;
+  top: 70px;
   display: block;
   list-style: none;
   border: none;
@@ -55,6 +60,20 @@
   color: black;
   text-decoration: none;
 }
+.dropdown-link {
+  display: none;
+  list-style: none;
+}
+.dropdown-anchor {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px 0px 20px;
+  color: #000;
+}
+.dropdown:hover .dropdown-link {
+  display: block;
+}
+/* Style for screen wider than 970 */
 @media only screen and (min-width: 970px) {
   .logo {
     width: 80%;
@@ -75,6 +94,9 @@
     width: 80%;
     margin: 0 auto;
   }
+  .border-bottom {
+    border-bottom: none;
+  }
   .anchor {
     text-decoration: none;
     color: white;
@@ -89,13 +111,25 @@
   .arrow {
     left: 0.8em;
   }
+  .dropdown-link {
+    margin-top: 10px;
+    background-color: #22478c;
+  }
+  .dropdown-anchor {
+    width: auto;
+    padding: 10px 10px;
+    color: white;
+  }
+
 }
 @media only screen and (min-width: 1355px) {
   .nav-link {
-    display: flex;
     list-style: none;
     justify-content: flex-start;
     padding-top: 8px;
+  }
+  .border-bottom {
+    border-bottom: none;
   }
   .klubb {
     margin-left: -20px;
@@ -117,5 +151,13 @@
   }
   .marked {
     border-right: none;
+  }
+  .dropdown-link {
+    margin-top: 10px;
+    background-color: #22478c;
+  }
+  .dropdown-anchor {
+    padding: 10px 10px;
+    color: white;
   }
 }
