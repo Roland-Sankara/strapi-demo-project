@@ -1,10 +1,20 @@
-import './App.css';
-import Footer from './components/Footer/Footer';
+import "./App.css";
+import NavMenu from "./components/NavMenu";
+import Footer from "./components/Footer/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div>
-  
-      <Footer/>
+      <Router>
+        <NavMenu />
+        <div>
+          <Routes>
+            <Route path="/" /*element={h}*/ />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 }
