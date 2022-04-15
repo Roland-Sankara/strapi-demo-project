@@ -8,8 +8,7 @@ function App() {
       <NavMenu />
       <div>
         <Routes>
-          <Route path="/">
-          </Route>
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
