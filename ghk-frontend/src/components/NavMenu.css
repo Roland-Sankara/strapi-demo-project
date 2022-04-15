@@ -73,8 +73,8 @@
 .dropdown:hover .dropdown-link {
   display: block;
 }
-/* Style for screen wider than 970 */
-@media only screen and (min-width: 970px) {
+
+@media only screen and (min-width: 1355px) {
   .logo {
     width: 80%;
     margin: 0 auto;
@@ -87,7 +87,7 @@
   .nav-link {
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 8px;
   }
   .nav-menu {
@@ -100,36 +100,6 @@
   .anchor {
     text-decoration: none;
     color: white;
-  }
-  .mobile-icon {
-    display: none;
-  }
-  .anchor {
-    text-decoration: none;
-    color: white;
-  }
-  .arrow {
-    left: 0.8em;
-  }
-  .dropdown-link {
-    margin-top: 10px;
-    background-color: #22478c;
-  }
-  .dropdown-anchor {
-    width: auto;
-    padding: 10px 10px;
-    color: white;
-  }
-
-}
-@media only screen and (min-width: 1355px) {
-  .nav-link {
-    list-style: none;
-    justify-content: flex-start;
-    padding-top: 8px;
-  }
-  .border-bottom {
-    border-bottom: none;
   }
   .klubb {
     margin-left: -20px;
