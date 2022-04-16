@@ -62,15 +62,23 @@
 .dropdown-link {
   display: none;
   list-style: none;
+  margin-bottom: -5px;
 }
 .dropdown-anchor {
   display: block;
   text-decoration: none;
-  padding: 10px 20px 0px 20px;
+  padding-left: 20px;
   color: #000;
 }
-.dropdown:hover .dropdown-link {
+.dropdown-anchor:first-child {
+  margin-top: 5px;
+}
+.dropdown-link {
   display: block;
+  margin-bottom: -15px;
+}
+.klubb{
+  margin-bottom: -10px;
 }
 
 @media only screen and (min-width: 1355px) {
@@ -128,5 +136,11 @@
   .dropdown-anchor {
     padding: 10px 10px;
     color: white;
+  }
+  .dropdown-link {
+    display: none;
+  }
+  .dropdown:hover .dropdown-link {
+    display: block;
   }
 }

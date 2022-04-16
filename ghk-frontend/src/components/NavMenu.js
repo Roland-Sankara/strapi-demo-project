@@ -27,8 +27,8 @@ const NavMenu = () => {
             className={isMobile ? "nav-link-mobile" : "nav-link"}
             onClick={() => setIsMobile(false)}
           >
-            <li className="links dropdown">
-              <Link className="anchor klubb" to="/klubben">
+            <li className="links dropdown klubb">
+              <Link className="anchor" to="/klubben">
                 Klubben
                 <span className="arrow">
                   <FontAwesomeIcon icon="fa-solid fa-sort-down" />
