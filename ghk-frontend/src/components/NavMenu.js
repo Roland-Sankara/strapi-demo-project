@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const NavMenu = () => {
   const [isMobile, setIsMobile] = useState(false);
-
   return (
     <div>
       <div className="logo">
@@ -24,6 +23,7 @@ const NavMenu = () => {
       <nav className="nav">
         <div className="nav-menu">
           <ul
+          // check if mobile 
             className={isMobile ? "nav-link-mobile" : "nav-link"}
             onClick={() => setIsMobile(false)}
           >
