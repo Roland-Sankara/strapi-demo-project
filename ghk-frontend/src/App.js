@@ -10,7 +10,7 @@ function App() {
         <NavMenu />
         <div>
           <Routes>
-            <Route path="/" /*element={h}*/ />
+            <Route path="/" /*element={<Home />}*/ />
           </Routes>
         </div>
         <Footer />
