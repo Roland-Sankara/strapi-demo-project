@@ -4,12 +4,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
     font-family: 'Open Sans', sans-serif;
+font-family: Arial, Helvetica, sans-serif;
   }
-=======
-    font-family: Arial, Helvetica, sans-serif;
-  }
+
   .App {
     margin-top: 40px;
   }
@@ -19,4 +17,4 @@
     margin-top: 10px;
   }
 }
->>>>>>> 04cc9ede41130ce5c1e93532a285855180305484
+

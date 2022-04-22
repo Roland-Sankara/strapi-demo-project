@@ -10,9 +10,9 @@ class PostListItem extends React.Component {
     return (
       <div id="aktueltPost">
       <div id="postText">
-       <h3>{savedProps.attributes.Title}</h3>
-        <span id="postDate"><img src={clockIcon} alt="" id="clockIcon"/>{savedProps.attributes.Date}</span>
-        <PostPreview data = {savedProps.attributes.PostText}/>
+       <h3>{savedProps.attributes.title}</h3>
+        <span id="postDate"><img src={clockIcon} alt="" id="clockIcon"/>{savedProps.attributes.date}</span>
+        <PostPreview  data = {savedProps.attributes.postText}/>
         <a href="./">les mer</a>
       </div>
       <div id="postImage" style={{ backgroundImage: `url(https://aitor.online/media/images/gherkin_build/gherkin_build_finished3.jpg.png)` }}></div>
@@ -22,4 +22,3 @@ class PostListItem extends React.Component {
 }
 
 export default PostListItem;
-

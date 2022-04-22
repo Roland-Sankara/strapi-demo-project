@@ -5,9 +5,11 @@ class PostPreview extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            data: this.props.data
+            data: this.props.data,
+            default: "test"
         }
     }
+
       
       // Fetch your restaurants immediately after the component is mounted
       componentDidMount = async () => {
@@ -15,10 +17,13 @@ class PostPreview extends React.Component{
     
       render() {
       const {data} = this.state;
-       const redata = markdownToTxt(data);
+      let redata = "";
+      if(data == null){ redata = "missing text" }
+      else {redata = data}
+       //const redata = markdownToTxt(data);
         return (
           <div className="postPreview">
-           {redata.substr(0, 80)+'...'}
+           {redata.substr(0, 80)+'...' }
           </div>
         );
       }

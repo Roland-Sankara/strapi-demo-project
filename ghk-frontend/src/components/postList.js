@@ -5,10 +5,10 @@ import './postList.css';
 class PostList extends React.Component {
   render() {
 
-  console.log(this.props.info);
+    console.log(this.props.info);
     return (
 
-        <ul id="postList">
+      <ul id="postList">
           {this.props.info.map(content => (
             <PostListItem key={content.id} data={content}/>
           ))}
@@ -18,4 +18,3 @@ class PostList extends React.Component {
 }
 
 export default PostList;
-
