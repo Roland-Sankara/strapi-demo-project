@@ -1,10 +1,5 @@
 import {React, useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
   useLocation
 } from "react-router-dom";
 import { getSlugged } from '../API/testingAPI';
@@ -47,8 +42,8 @@ function Dashboard (props)  {
   }
 
     useEffect(() => {
-    getAnswer();
-  }, []);
+      getAnswer();
+    }, []);
 
     if(val.length != 0){
     return (
