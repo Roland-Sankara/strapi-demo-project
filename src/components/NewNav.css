@@ -1,0 +1,144 @@
+#navMain{
+	background-color: #fff;
+	padding: 0 10px;
+	padding-top: 8px;
+}
+
+#logo{
+	height: 40px;
+}
+
+#headWrapper{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+#navHead{
+	padding: 15px;
+}
+
+.visible#navButtons{
+	display: none;
+}
+
+#navButtons{
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: auto;
+	flex-wrap: wrap;
+	padding-bottom: 12px;
+}
+
+.navButton {
+    padding: 3px 0;
+    padding-right: 12px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.navButton > a {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 12px;
+    height: 28px;
+}
+
+.dropMenu {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 12px;
+    padding: 5px 0 0 22px;
+    display: none;
+    transform: translateY(3px);
+    padding-bottom: 0;
+    padding-top: 5px;
+}
+.dropMenu a{
+	color: black;
+	text-decoration: none;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+.dropdown:hover .dropMenu {
+    display: flex;
+}
+a .arrow{
+	margin-left: 6px;
+}
+a .arrow img{
+	filter: invert(100%);
+}
+.follow a{
+	font-size: 14px;
+	color: #00478C;
+}
+
+.mobile-icon{
+	width: 32px;
+	height: 32px;
+	background-color: white;
+	border: none;
+	display: block;
+	margin-left: auto;
+	margin-bottom: 8px;
+}
+.mobile-icon img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	#navButtons{
+		flex-direction: row;
+		padding-bottom: 0;
+		display: flex!important;
+	}
+	.dropMenu{
+		position: absolute;
+		background-color: #00478C;
+		padding: 10px 15px;
+		padding-bottom: 4px;
+	}
+	.dropMenu a{
+		color: white;
+	}
+	#navMain{
+	background-color: #00478C;	
+	}
+	.navButton{
+	    border-right: 2px solid #336faa;
+	}
+	.navButton{
+	    border-right: 2px solid #336faa;
+	}
+	.navButton:last-child{
+		border-right: none;
+	}
+	.navButton > a {
+		color: white;
+	}
+	a .arrow img{
+		filter: unset;
+	}
+	#logo{
+		height: 70px;
+	}
+	.follow{
+		font-size: unset;
+	}
+	.mobile-icon{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

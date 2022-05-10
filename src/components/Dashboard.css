@@ -1,0 +1,49 @@
+#Dashboard{
+	width: 100%;
+	max-width: 1200px;
+	margin: 30px auto;
+	padding: 0 10px;
+}
+
+#Dashboard h2{
+	font-size: 18px;
+}
+
+#Dashboard ul{
+	list-style: inside;
+}
+#Dashboard #postDate{
+	font-size: 12px;
+	color: black;
+	margin-bottom: 10px;
+}
+#Dashboard #postDate b{
+	margin-right: 5px;
+}
+
+#Dashboard h1{
+	margin-bottom: 4px;
+}
+.img-fluid{
+	max-width: 100%;
+}
+#Dashboard p, #Dashboard ul, #Dashboard h2, .img-fluid{
+	margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+	#Dashboard{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	#Dashboard h1{
+		font-size: 36px;
+	}
+	#Dashboard h2{
+		font-size: 28px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
